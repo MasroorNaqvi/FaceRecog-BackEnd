@@ -1,5 +1,6 @@
 const handleimage = (req, res, db) => {
   const { id } = req.body;
+  console.log(id);
 
   db("users")
     .where("id", "=", id)
